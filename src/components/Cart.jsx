@@ -4,7 +4,7 @@ import { useEffect } from "react"
 import { addTocart, getTotals, remove, clear, decrement } from "../redux/features/cart"
 const Cart = () => {
     const dispatch = useDispatch()
-    const { cart } = useSelector((state) => state.cart)
+    const { cart, cartTotalAmount } = useSelector((state) => state.cart)
     useEffect(() => {
         dispatch(getTotals())
     }, [cart, dispatch])
@@ -44,7 +44,7 @@ const Cart = () => {
                                 </div>
                                 <div>
                                     <span>subtotal</span>
-                                    <span>${cart.cartTotalAmount}</span>
+                                    <span>${cartTotalAmount}</span>
                                 </div>
                             </div>
                         </div>

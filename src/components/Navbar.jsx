@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { count } from "../redux/features/cart";
 const Navbar = () => {
     const dispatch = useDispatch()
-    const { cartTotalQuantity, cartTotalAmount } = useSelector(state => state.cart)
+    const { cartTotalQuantity } = useSelector(state => state.cart)
     return (
         <div className="flex p-5 bg-black items-center justify-between">
             <Link to="/" className="text-white">shopping-cart</Link>

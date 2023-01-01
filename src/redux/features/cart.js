@@ -65,7 +65,7 @@ const cartSlice = createSlice({
                 accumulator + currentValue.price * currentValue.quantity, 0)
         },
         count(state, action) {
-            return state.cart.length
+            state.cart = state.cart.length
         }
     }
 })

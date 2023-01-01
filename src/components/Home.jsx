@@ -9,12 +9,12 @@ const Home = () => {
         dispatch(addTocart(product),)
         history('/cart')
     }
-    return (<div className="grid 2xl:grid-cols-3 mt-4 place-items-center xl:grid-cols-2 grid-cols-1 gap-6">
+    return (<div className="grid 2xl:grid-cols-3 xl:grid-cols-2 grid-cols-1 place-items-center gap-6 ">
 
         {
             data.map((product) => (
                 <div key={product.id} className="card w-96 bg-base-100 shadow-xl">
-                    <figure><img src={product.img} alt="Shoes" /></figure>
+                    <figure><img className="" src={product.img} alt="Shoes" /></figure>
                     <div className="card-body">
                         <h2 className="card-title">{product.name}</h2>
                         <p>If a dog chews shoes whose shoes does he choose?</p>
