@@ -17,7 +17,6 @@ const Home = () => {
                     <figure><img className="" src={product.img} alt="Shoes" /></figure>
                     <div className="card-body">
                         <h2 className="card-title">{product.name}</h2>
-                        <p>If a dog chews shoes whose shoes does he choose?</p>
                         <div className="card-actions justify-between">
                             <div>{product.price}</div>
                             <button onClick={() => handleAddToCart(product)} className="btn btn-primary">addTocart</button>
