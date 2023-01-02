@@ -64,9 +64,7 @@ const cartSlice = createSlice({
             state.cartTotalAmount = state.cart.reduce((accumulator, currentValue) =>
                 accumulator + currentValue.price * currentValue.quantity, 0)
         },
-        count(state, action) {
-            state.cart = state.cart.length
-        }
+
     }
 })
 export const { addTocart, remove, clear, decrement, getTotals, count } = cartSlice.actions
