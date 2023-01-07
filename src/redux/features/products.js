@@ -1,14 +1,16 @@
 import { createSlice } from "@reduxjs/toolkit"
-
-import ProductData from "../productData.js"
+import axios from "axios"
+import proudctData from "../productData"
 const initialState = {
-    cart: localStorage.getItem('cart') ? JSON.parse(localStorage.getItem('cart')) : [],
-    items: ProductData,
+    products: localStorage.getItem('products') ? JSON.parse(localStorage.getItem('products')) : [],
+    items: proudctData
 }
+
 const prodctsSlice = createSlice({
     name: 'products',
     initialState,
     reducers: {
     }
 })
+
 export default prodctsSlice.reducer

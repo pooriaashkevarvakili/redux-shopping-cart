@@ -6,13 +6,17 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import store from "./redux/store"
 import "./assets/iransans.css"
+import { ApiProvider } from '@reduxjs/toolkit/dist/query/react';
+import { productsApi } from "./redux/apiSlice";
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Provider store={store}>
-      <App />
-    </Provider>
-
+    <ApiProvider api={productsApi}>
+      <Provider store={store}>
+        <App />
+      </Provider>
+    </ApiProvider>
   </React.StrictMode>
 );
 

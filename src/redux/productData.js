@@ -1,7 +1,10 @@
+
 const productData = [
     {
         id: 1,
         price: 100,
+
+
 
         name: ' Galaxy A13',
         img: 'https://dkstatics-public.digikala.com/digikala-products/06aaa82b2af4b71992683701769b0afa4fa169bf_1666160815.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80'
@@ -41,3 +44,4 @@ const productData = [
     }
 ]
 export default productData
+

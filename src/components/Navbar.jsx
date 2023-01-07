@@ -2,6 +2,7 @@ import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 const Navbar = () => {
     const { cart } = useSelector(state => state.cart)
+
     return (
         <div className="navbar bg-black">
             <div className="flex-1">

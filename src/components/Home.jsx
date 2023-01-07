@@ -4,6 +4,7 @@ import { addTocart } from "../redux/features/cart";
 import "../assets/app.css"
 const Home = () => {
     const dispatch = useDispatch()
+
     const data = useSelector((state) => state.products.items)
     const [loading, setloading] = useState(false)
     useEffect(() => {
@@ -24,13 +25,11 @@ const Home = () => {
                         </div>
 
                     ) : (
-
                         <div className="grid 2xl:grid-cols-3 xl:grid-cols-2 grid-cols-1 place-items-center gap-6 ">
-
                             {
                                 data.map((product) => (
                                     <div key={product.id} >
-                                        <div className="card w-96 bg-base-100 shadow-xl">
+                                        <div className="card dark:bg-black w-96 bg-base-100 shadow-xl">
                                             <figure><img className="" src={product.img} alt="Shoes" /></figure>
                                             <div className="card-body">
                                                 <h2 className="card-title">{product.name}</h2>
@@ -40,10 +39,6 @@ const Home = () => {
                                                 </div>
                                             </div>
                                         </div>
-
-
-
-
                                     </div >
                                 ))
                             }
