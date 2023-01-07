@@ -1,14 +1,35 @@
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
+import { useState } from "react";
+import { DarkModeSwitch } from "react-toggle-dark-mode";
+import useDarkSide from "../dark/useDarkSide";
 const Navbar = () => {
     const { cart } = useSelector(state => state.cart)
+    const [colorTheme, setTheme] = useDarkSide();
+    const [darkSide, setDarkSide] = useState(
+        colorTheme === "light" ? true : false
+    );
 
+    const toggleDarkMode = (checked) => {
+        setTheme(colorTheme);
+        setDarkSide(checked);
+    };
     return (
-        <div className="navbar bg-black">
+        <div className="navbar bg-orange-400">
             <div className="flex-1">
                 <Link to="/" className="btn btn-ghost normal-case text-xl text-white">فروشگاه اینترنتی</Link>
             </div>
+            <div className="flex-1 mt-4">
+                <DarkModeSwitch
+                    style={{ marginBottom: "2rem" }}
+                    checked={darkSide}
+                    onChange={toggleDarkMode}
+                    size={30}
+                />
+            </div>
+
             <div className="flex-none">
+
                 <div className="dropdown dropdown-end">
                     <label tabIndex="0" className="btn text-white btn-ghost btn-circle">
                         <Link to="/cart">

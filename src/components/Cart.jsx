@@ -22,29 +22,29 @@ const Cart = () => {
             ) : (
                 <div className="grid 2xl:grid-cols-3 mt-4 place-items-center xl:grid-cols-2 grid-cols-1 gap-6" >
                     {cart.map((product) => (
-                        <div key={product.id} className="card w-96 bg-base-100 shadow-xl">
+                        <div key={product.id} className="card w-96 dark:bg-black bg-base-100 shadow-xl">
                             <figure><img src={product.img} alt="Shoes" /></figure>
                             <div className="card-body">
-                                <h2 className="card-title">{product.name}</h2>
+                                <h2 className="card-title text-black dark:text-white">{product.name}</h2>
 
                                 <div className="card-actions justify-between">
-                                    <p>{product.price}</p>
+                                    <p className="text-black dark:text-white">{product.price}</p>
                                     <button onClick={() => dispatch(remove(product))} className="btn btn-primary">remove</button>
                                 </div>
                                 <div className="flex justify-between">
                                     <div>
                                         <button onClick={() => dispatch(addTocart(product))} className="btn btn-sm btn-primary">+</button>
-                                        <button className="ml-3">{product.quantity}</button>
+                                        <button className="ml-3 text-black dark:text-white">{product.quantity}</button>
                                         <button onClick={() => dispatch(decrement(product))} className="btn ml-3 btn-sm btn-primary">-</button>
                                     </div>
-                                    <div>${product.price * product.quantity}</div>
+                                    <div className="text-black dark:text-white">${product.price * product.quantity}</div>
                                 </div>
                                 <div>
                                     <button onClick={() => dispatch(clear())} className="btn btn-primary">clear</button>
                                 </div>
                                 <div>
-                                    <span>subtotal</span>
-                                    <span>${cartTotalAmount}</span>
+                                    <span className="text-black dark:text-white">subtotal</span>
+                                    <span className="text-black dark:text-white">${cartTotalAmount}</span>
                                 </div>
                             </div>
                         </div>

@@ -5,19 +5,25 @@ import Navbar from "./components/Navbar";
 import { ToastContainer } from "react-toastify"
 import '../node_modules/react-toastify/dist/ReactToastify.css'
 import NotFound from "./components/NotFound";
+import Footer from "./components/Footer";
 
 function App() {
   return (
-    <BrowserRouter>
-      <ToastContainer />
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/cart" element={<Cart />} />
-        <Route path="*" element={<NotFound />} />
-      </Routes>
-    </BrowserRouter>
+    <div className="bg-white dark:bg-black">
 
+
+      <BrowserRouter>
+        <ToastContainer />
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/cart" element={<Cart />} />
+          <Route path="*" element={<NotFound />} />
+
+        </Routes>
+        <Footer />
+      </BrowserRouter>
+    </div>
   );
 }
 

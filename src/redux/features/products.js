@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit"
-import axios from "axios"
+
 import proudctData from "../productData"
 const initialState = {
     products: localStorage.getItem('products') ? JSON.parse(localStorage.getItem('products')) : [],
