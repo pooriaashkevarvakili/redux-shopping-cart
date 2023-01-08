@@ -111,7 +111,7 @@ const Footer = () => {
                         <div className="grid md:grid-cols-3 gird-cols-1 gap-4 flex justify-center items-center">
                             <div className="md:ml-auto md:mb-6">
                                 <p className="">
-                                    <strong>Sign up for our newsletter</strong>
+                                    <strong>در این وب سایت ثبت نام کنید</strong>
                                 </p>
                             </div>
 
@@ -141,7 +141,7 @@ const Footer = () => {
 
                             <div className="md:mr-auto mb-6">
                                 <button type="submit" className="inline-block px-6 py-2 border-2 border-white text-white font-medium text-xs leading-tight uppercase rounded hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out">
-                                    Subscribe
+                                    کلیک
                                 </button>
                             </div>
                         </div>
@@ -149,86 +149,83 @@ const Footer = () => {
                 </div>
 
                 <div className="mb-6">
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio earum
-                        repellat quaerat voluptatibus placeat nam, commodi optio pariatur est quia magnam
-                        eum harum corrupti dicta, aliquam sequi voluptate quas.
+                    <p style={{ direction: "rtl" }}>
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.
                     </p>
                 </div>
 
                 <div className="grid lg:grid-cols-4 md:grid-cols-2">
                     <div className="mb-6">
-                        <h5 className="uppercase font-bold mb-2.5">Links</h5>
+                        <h5 className="uppercase font-bold mb-2.5">لینک ها</h5>
 
                         <ul className="list-none mb-0">
                             <li>
-                                <a href="#!" className="text-white">Link 1</a>
+                                <a href="#!" className="text-white">لینک 1</a>
                             </li>
                             <li>
-                                <a href="#!" className="text-white">Link 2</a>
+                                <a href="#!" className="text-white">لینک 2</a>
                             </li>
                             <li>
-                                <a href="#!" className="text-white">Link 3</a>
+                                <a href="#!" className="text-white">لینک 3</a>
                             </li>
                             <li>
-                                <a href="#!" className="text-white">Link 4</a>
+                                <a href="#!" className="text-white">لینک 4</a>
                             </li>
                         </ul>
                     </div>
 
                     <div className="mb-6">
-                        <h5 className="uppercase font-bold mb-2.5">Links</h5>
+                        <h5 className="uppercase font-bold mb-2.5">لینک ها</h5>
 
                         <ul className="list-none mb-0">
                             <li>
-                                <a href="#!" className="text-white">Link 1</a>
+                                <a href="#!" className="text-white">لینک 1</a>
                             </li>
                             <li>
-                                <a href="#!" className="text-white">Link 2</a>
+                                <a href="#!" className="text-white">لینک 2</a>
                             </li>
                             <li>
-                                <a href="#!" className="text-white">Link 3</a>
+                                <a href="#!" className="text-white">لینک 3</a>
                             </li>
                             <li>
-                                <a href="#!" className="text-white">Link 4</a>
+                                <a href="#!" className="text-white">لینک 4</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div className="mb-6">
+                        <h5 className="uppercase font-bold mb-2.5">لینک ها</h5>
+
+                        <ul className="list-none mb-0">
+                            <li>
+                                <a href="#!" className="text-white">لینک 1</a>
+                            </li>
+                            <li>
+                                <a href="#!" className="text-white">لینک 2</a>
+                            </li>
+                            <li>
+                                <a href="#!" className="text-white">لینک 3</a>
+                            </li>
+                            <li>
+                                <a href="#!" className="text-white">لینک 4</a>
                             </li>
                         </ul>
                     </div>
 
                     <div className="mb-6">
-                        <h5 className="uppercase font-bold mb-2.5">Links</h5>
+                        <h5 className="uppercase font-bold mb-2.5">لینک ها</h5>
 
                         <ul className="list-none mb-0">
                             <li>
-                                <a href="#!" className="text-white">Link 1</a>
+                                <a href="#!" className="text-white">لینک 1</a>
                             </li>
                             <li>
-                                <a href="#!" className="text-white">Link 2</a>
+                                <a href="#!" className="text-white">لینک 2</a>
                             </li>
                             <li>
-                                <a href="#!" className="text-white">Link 3</a>
+                                <a href="#!" className="text-white">لینک 3</a>
                             </li>
                             <li>
-                                <a href="#!" className="text-white">Link 4</a>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div className="mb-6">
-                        <h5 className="uppercase font-bold mb-2.5">Links</h5>
-
-                        <ul className="list-none mb-0">
-                            <li>
-                                <a href="#!" className="text-white">Link 1</a>
-                            </li>
-                            <li>
-                                <a href="#!" className="text-white">Link 2</a>
-                            </li>
-                            <li>
-                                <a href="#!" className="text-white">Link 3</a>
-                            </li>
-                            <li>
-                                <a href="#!" className="text-white">Link 4</a>
+                                <a href="#!" className="text-white">لینک 4</a>
                             </li>
                         </ul>
                     </div>
@@ -236,8 +233,7 @@ const Footer = () => {
             </div>
 
             <div className="text-center p-4" style={{ backgroundColor: " rgba(0, 0, 0, 0.2)" }}>
-                © 2021 Copyright:
-                <a className="text-white" href="https://tailwind-elements.com/">Tailwind Elements</a>
+                این یک فروشگاه اینترنتی کوچک است
             </div>
         </footer>
     );

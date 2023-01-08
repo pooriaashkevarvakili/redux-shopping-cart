@@ -24,7 +24,7 @@ export default function Home() {
                                                 <h2 className="card-title dark:text-white">{product.name}</h2>
                                                 <div className="card-actions justify-between">
                                                     <div className="dark:text-white">{product.price}</div>
-                                                    <button onClick={() => dispatch(addTocart(product))} className="btn btn-primary">addTocart</button>
+                                                    <button onClick={() => dispatch(addTocart(product))} className="btn btn-primary">افزودن به صفحه خرید</button>
                                                 </div>
                                             </div>
                                         </div>
